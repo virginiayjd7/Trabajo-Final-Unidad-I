@@ -47,7 +47,12 @@ Propuesta de un sistema de facturación de  compra y venta
 de artículos de ferretería.
 %%FIN Titulo
 %%INICIO Autores
-\section{.................}
+\section{Autores}
+\begin{itemize}
+    \item Yaneth Aquino Huallpa
+    \item Jesus Alejandro Quenaya Buiza  
+    \item Daniel Angel Juarez Chumpe
+\end{itemize}
 %%FIN Autores
 %%INICIO Planteamiento del problema
 \section{Planteamiento del problema}
@@ -58,12 +63,12 @@ eficientes y óptimas para de ésta manera lograr los resultados esperados.
 
 %%----------------------------------------------------------------------------------------------------------------------------------------------------------
 	\subsection{\textbf{Problema}}
- En la microempresa “fffffff” ningún proceso se encontraba automatizado, todas
+ En la microempresa “sysferreteria” ningún proceso se encontraba automatizado, todas
 las actividades se realizaban manualmente y no se lograban concretar los procesos debido a la
 magnitud de los mismos; por tal razón se procederá a desarrollar el sistema que contará con
 módulos de usuarios, módulo de facturación, módulo de compras, gestión de inventario, módulo
 de consultas y la generación de reportes que cumplan con los requerimientos de los usuarios
- y términos.
+ y términos.\cite{refaquino3}
 %%-----------------------------------------------------------------------------
 	\subsection{\textbf{Justificación }}
 Con el  presente proyecto  se pretende desarrollar el sistema de facturación para que de ésta forma el propietario conozca exactamente las ganancias netas diarias o mensuales
@@ -78,7 +83,7 @@ El sistema permitirá registrar, actualizar, buscar y dar por “deteriorado” 
 El sistema realizará ventas la cual nos permitirá agregar productos a la venta, restar con el stock, registrar o anular venta. 
 El sistema permitirá añadir pedido (datos del producto y del cliente), registrar o anular pedido y listar pedidos.
 El sistema permitirá generar reportes sobre: Ventas del día con el total ganado y Lista de Pedidos.
-El sistema permitirá realizar la autentificación de los usuarios
+El sistema permitirá realizar la autentificación de los usuarios.\cite{refaquino3}
 
 
 \section{Objetivos}
@@ -94,14 +99,68 @@ El sistema permitirá realizar la autentificación de los usuarios
 	\end{itemize}
 
 	\section{Referentes teóricos}
+\begin{itemize} 
+    \item Hemos realizado una investigación en empresas relacionadas con el rubro de la ferretería, en este caso elegimos el caso de la empresa HELEO situada en el parque industrial de Tacna, donde pudimos observar como trabaja su sistema de COMPRA Y VENTA de productos.\cite{refaquino3}
+	\begin{center}
+	\includegraphics[width=12cm]{./imagen/1} 
+	\end{center}
+	\item Posee un anexo en la web de CATALOGO EN LINEA donde da una mayor promoción a sus productos antes de acudir a la tienda a comprarlos.
+	\begin{center}
+	\includegraphics[width=12cm]{./imagen/2} 
+	\end{center}
+	\item Asimismo pudimos ver un detalle interesante que era un modulo de CONSULTA DE FACTURAS ELECTRONICAS VIA INTERNET para los clientes
+	\begin{center}
+	\includegraphics[width=12cm]{./imagen/3} 
+	\end{center}
+\end{itemize}
 
-	\section{Desarrollo de la propuesta}
+\section{Desarrollo de la propuesta}
+La calidad de código suele decirse que es un atributo interno de calidad, dado que no se hace visible al usuario. Pero llega un momento en el cual este atributo de calidad pasa de ser interno a externo, y esto se da cuando el hecho de tener modificar el código para hacer un cambio lleva mucho más tiempo del que debería. Con el fin de verificar la calidad interna de un sistema se suelen hacer análisis de código con SonarQube o herramientas similares. En este documento se muestra parte de de nuestro proyecto , donde básicamente  cuenta cómo hacer una prueba de concepto rápidamente usando una imagen Docker de SonarQube, y ejecutando el análisis desde SonarQube Scanner.
+SonarQube, como tantas otras herramientas similares, permite realizar análisis estático de código fuente de manera automática, buscando patrones con errores, malas prácticas o incidentes. Además, realiza un cálculo de la deuda técnica. Dentro de las verificaciones que hacen herramientas como SonarQube, se encuentran las siguientes:\cite{refaquino}
+\begin{itemize}
+	\item Detección de código duplicado..
+	\item Falta de pruebas unitarias, falta de comentarios. 
+	\item Código spaghetti, complejidad ciclomática, alto acoplamiento.
+	\item Tamaño de archivos de código.
+	\item Tamaño de métodos.
+	\item No adecuación a estándares y convenciones de código.
+	\item Vulnerabilidades conocidas de seguridad.
+	\\\
+	Una muestra en Nuestro proyecto:
+		\begin{center}
+	\includegraphics[width=14cm]{./imagen/6} 
+		\includegraphics[width=14cm]{./imagen/7} 
+	\end{center}
+	\end{itemize}
 
 		\subsection{\textbf{Tecnología de información  }}
-		
+		\begin{itemize}
+	\item 	SQL SERVER: Microsoft SQL Server es un sistema de gestión de base de datos relacional, desarrollado por la empresa Microsoft. El lenguaje de desarrollo utilizado es Transact-SQL, una implementación del estándar ANSI del lenguaje SQL, utilizado para manipular y recuperar datos, crear tablas y definir relaciones entre ellas..
+	\item 	C#: lenguaje de programación multiparadigma desarrollado y estandarizado por Microsoft. Es un lenguaje de programación creado para diseñar aplicaciones en la plataforma.NET.
+	\item 	Visual Studio: es un entorno de desarrollo en diferentes sistemas operativos y compatibles con múltiples lenguajes de programación al igual que entornos de desarrollo web. 
+	\end{itemize}
 		\subsection{\textbf{ Metodología, técnicas usadas  }}
+		UML es un lenguaje para hacer modelos y es independiente de los métodos de análisis y diseño. Existen diferencias importantes entre un método y un lenguaje de modelado. Un método es una manera explícita de estructurar el pensamiento y las acciones de cada individuo. Además, el método le dice al usuario qué hacer, cómo hacerlo, cuándo hacerlo y por qué hacerlo; mientras que el lenguaje de modelado carece de estas instrucciones. Los métodos contienen modelos y esos modelos son utilizados para describir algo y comunicar los resultados del uso del método.\cite{refaquino2}
+		\begin{center}
+	\includegraphics[width=12cm]{./imagen/5} 
+	\end{center}
+		
 \section{Cronograma }
-	
+	Definición de métricas\cite{refaquino1}
+	\begin{itemize}
+	    \item Código duplicado
+	\begin{center}
+	\includegraphics[width=12cm]{./imagen/8} 
+	\end{center}
+	\item Mantenibilidad
+		\begin{center}
+	\includegraphics[width=12cm]{./imagen/9} 
+	\end{center}
+	\item Medida
+		\begin{center}
+	\includegraphics[width=12cm]{./imagen/10} 
+	\end{center}
+	\end{itemize}
 	\newpage
 	\bibliographystyle{apalike}
 	\bibliography{BIBLIOGRAFIA}	
@@ -111,7 +170,6 @@ El sistema permitirá realizar la autentificación de los usuarios
 % https://revistas.udistrital.edu.co/index.php/tia/article/view/4639/7094
 % http://revistas.unitru.edu.pe/index.php/PGM/article/view/193/199
 % http://www.spentamexico.org/v4-n2/4(2)%2016-52.pdf          ---> PAGINA 18
-
 
 \end{document}
 
